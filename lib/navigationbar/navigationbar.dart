@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:instagram_ui/navigationbar/homepage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class _HomePageState extends State<HomePage> {
    
    int myIndex = 0;
    List<Widget> myList = [
-    Text('data'),
+    const HomeScreen(),
     Text('data'),
     Text('data'),
     Text('data'),
@@ -27,7 +28,7 @@ class _HomePageState extends State<HomePage> {
         children: myList,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
+        type: BottomNavigationBarType.fixed,  
         selectedItemColor: Colors.black,
         onTap: (index){
           setState(() {
@@ -35,11 +36,11 @@ class _HomePageState extends State<HomePage> {
           });
         },
         items:const [
-        BottomNavigationBarItem(icon: Icon(Icons.home)),
-        BottomNavigationBarItem(icon: Icon(Icons.search)),
-        BottomNavigationBarItem(icon: Icon(Icons.movie_filter_outlined)),
-        BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined)),
-        BottomNavigationBarItem(icon: Icon(Icons.person)),
+        BottomNavigationBarItem(icon: Icon(Icons.home_outlined),label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.search),label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.movie_filter_outlined),label: ''),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_bag_outlined),label:''),
+        BottomNavigationBarItem(icon: Icon(Icons.person),label:''),
       ]),
     );
   }
