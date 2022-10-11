@@ -10,29 +10,37 @@ class SearchScreen extends StatelessWidget {
     borderSide: const BorderSide(color: Colors.grey));
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            TextField(
-              decoration: InputDecoration(
-                hintText: 'Search',
-                prefixIcon: Icon(Icons.search),
-                contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 1),
-                border: outlineInputBorder,
-                focusedBorder: outlineInputBorder,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  cursorColor: Colors.grey,
+                  decoration: InputDecoration(
+                    hintText: 'Search',
+                    prefixIcon: Icon(Icons.search),
+                    prefixIconColor: Colors.grey,
+                    contentPadding: EdgeInsets.fromLTRB(10, 10, 10, 1),
+                    border: outlineInputBorder,
+                    focusedBorder: outlineInputBorder,
+                  ),
+                ),
               ),
-            ),
-           Expanded(
-             child: MasonryGridView.builder(gridDelegate:SliverSimpleGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3) ,
-             itemCount: images.length,
-              itemBuilder: (context, index) {
-                return ClipRRect(
-                  borderRadius: BorderRadius.circular(10),
-                
-                );
-              },),
-           ),
-           
-          ],
+             SizedBox(height: 10,),
+               SizedBox(
+                height: MediaQuery.of(context).size.height,
+                 child: MasonryGridView.builder(gridDelegate: SliverSimpleGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3),
+                 itemCount: 10, 
+                 itemBuilder: (context, index) {
+                   return ClipRRect(
+                    // borderRadius: BorderRadius.circular(10),
+                    child: Image(image: NetworkImage(images[index]),fit: BoxFit.cover,),
+                   );
+                 },),
+               )
+            ],
+          ),
         ),
       ),
     );
@@ -50,3 +58,4 @@ class SearchScreen extends StatelessWidget {
     'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60',
     'https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
   ];
+  

@@ -1,6 +1,34 @@
-List<String> images = [
-  "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",  
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",  
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png",  
-    "https://static.javatpoint.com/tutorial/flutter/images/flutter-logo.png"
+List users = [
+  {
+    'name':'Blacko',
+    'img':'https://images.unsplash.com/photo-1628890920690-9e29d0019b9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cHJvZmlsZSUyMHBob3RvfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Atom',
+    'img':'https://images.unsplash.com/photo-1558203728-00f45181dd84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Omarh',
+    'img':'https://images.unsplash.com/photo-1614289371518-722f2615943d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Evans',
+    'img': 'https://images.unsplash.com/photo-1614502875832-77fe801288ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Blacko',
+    'img':'https://images.unsplash.com/photo-1524290266577-e90173d9072a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDd8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Ben',
+    'img':'https://images.unsplash.com/photo-1584268889922-d9d85d63ba66?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Lfystyle',
+    'img':'https://images.unsplash.com/photo-1535931737580-a99567967ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzV8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
+  {
+    'name':'Hope',
+    'img':'https://images.unsplash.com/photo-1579380287268-aa88d096651c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'
+  },
 ];

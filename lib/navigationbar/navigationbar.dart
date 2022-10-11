@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:instagram_ui/navigationbar/homepage.dart';
+import 'package:instagram_ui/navigationbar/persons_screen.dart';
+import 'package:instagram_ui/navigationbar/reels.dart';
+import 'package:instagram_ui/navigationbar/search.dart';
+import 'package:instagram_ui/navigationbar/shop.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,11 +16,11 @@ class _HomePageState extends State<HomePage> {
    
    int myIndex = 0;
    List<Widget> myList = [
-    const HomeScreen(),
-    Text('data'),
-    Text('data'),
-    Text('data'),
-    Text('data')
+   const HomeScreen(),
+   const SearchScreen(),
+   const ReelScreen(),
+   const ShopScreen(),
+   const ProfileScreen()
    ];
   @override
   Widget build(BuildContext context) {

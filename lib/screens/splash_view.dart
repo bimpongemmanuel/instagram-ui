@@ -29,6 +29,8 @@ class _SplashViewState extends State<SplashView> {
            ),
              const Text('INTSGRAM',style:  TextStyle(fontWeight: FontWeight.bold,fontSize: 30,fontStyle: FontStyle.italic,color: Colors.red),),
           const SizedBox(height: 180,),
+
+           
           
           const Text('From',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 30),),
           Container(

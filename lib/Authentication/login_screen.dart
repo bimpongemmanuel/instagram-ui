@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui/Authentication/username.dart';
+import 'package:instagram_ui/navigationbar/navigationbar.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({Key? key}) : super(key: key);
@@ -50,7 +51,9 @@ class LogInScreen extends StatelessWidget {
                     backgroundColor: Colors.blue[100],
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10))),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()));
+                },
                 child: Center(
                     child: Text(
                   'Log in',

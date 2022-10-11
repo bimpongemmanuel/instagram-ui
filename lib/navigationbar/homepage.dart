@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
+import 'package:instagram_ui/navigationbar/search.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
                 shrinkWrap: true,
                 physics: const NeverScrollableScrollPhysics(),
                 scrollDirection: Axis.horizontal,
-                itemCount:10,
+                itemCount:images.length,
                 itemBuilder: (context,index) {
                   return storyCard();
                 }
@@ -45,7 +46,7 @@ class HomeScreen extends StatelessWidget {
              ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: 6,
+              itemCount:images.length,
                itemBuilder: (context,index) {
                  return SizedBox(
                   height: MediaQuery.of(context).size.height/1.8,
@@ -62,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                               Row(
                                 
                                 children: const [
-                                CircleAvatar(),
+                                CircleAvatar(backgroundImage: NetworkImage('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),),
                                 SizedBox(width: 5,),
                                 Text('Atom')
                               ],),
@@ -101,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                           padding: const EdgeInsets.all(5.0),
                           child: Row(
                             children: const [
-                              CircleAvatar(),
+                              CircleAvatar(backgroundImage: NetworkImage('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'),),
                               SizedBox(width: 5,),
                               Text('Liked by slow_atom others')
                             ],

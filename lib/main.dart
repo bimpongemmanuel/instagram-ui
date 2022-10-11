@@ -1,9 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram_ui/navigationbar/navigationbar.dart';
-import 'package:instagram_ui/navigationbar/search.dart';
-import 'package:instagram_ui/navigationbar/shop.dart';
 import 'package:instagram_ui/screens/splash_view.dart';
 
 void main() {
@@ -17,7 +14,7 @@ void main() {
       builder: DevicePreview.appBuilder,
       theme: ThemeData(scaffoldBackgroundColor: Colors.white),
       darkTheme: ThemeData.dark(),
-      home:const ShopScreen(),
+      home:const SplashView(),
    ) )
   );
 }
